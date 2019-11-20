@@ -1,0 +1,26 @@
+body {
+  text-align: center;
+}
+
+#grid {
+  width: 500px;
+  height: 500px;
+  margin: 0 auto;
+}
+
+.row {
+  font-size: 0;
+}
+
+.gridItem {
+  /*background-color: rgb(245, 245, 245);*/
+  background-color: black;
+  opacity: 0;
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+}
+
+.gridItem:hover {
+
+}
