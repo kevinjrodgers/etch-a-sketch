@@ -2,6 +2,26 @@ body {
   text-align: center;
 }
 
+h1 {
+  /* Color Name: Old Gold */
+  color: rgb(201, 176, 55);
+}
+
+.turn-circles {
+  background-color: white;
+  height: 75px;
+  width: 75px;
+  border-radius: 32px;
+  color: white;
+  display: inline-block;
+  margin-top: 10px;
+
+}
+
+#turn-circles-right {
+  margin-left: 700px;
+}
+
 #button-interface button {
   margin: 5px;
 }
@@ -11,7 +31,7 @@ body {
 }
 
 #grid {
-  width: 500px;
+  width: 700px;
   height: 500px;
   margin: 0 auto;
 }
@@ -38,4 +58,7 @@ body {
   background: red;
   border: 3px solid darkred;
   border-radius: 5px;
+  width: 1000px;
+  height: 725px;
+  margin: 0 auto;
 }
