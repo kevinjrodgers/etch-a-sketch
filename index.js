@@ -1,3 +1,18 @@
+let resetButton = document.getElementById("reset");
+let switchButton = document.getElementById("switch");
+let resizeButton = document.getElementById("resize");
+let currBrush = "greyscale";
+let gridNum = 32;
+resetButton.addEventListener("click", () => {
+  reset();
+});
+switchButton.addEventListener("click", () => {
+  //switchColors();
+});
+resizeButton.addEventListener("click", () => {
+  resizeGrid();
+});
+
 function generateGrid(dimensions) {
   let grid = document.getElementById("grid");
   let gridItem;
@@ -33,4 +48,23 @@ function onHover() {
   let opacityLevel = this.getAttribute("opacity");
   this.style.opacity = Number(this.style.opacity) + 0.1;
 }
-window.onload = generateGrid(32);
+
+function resizeGrid() {
+  gridNum = prompt("Please enter desired size of grid (4-64)");
+  //Set grid's innerHTML to "" to remove all squares
+  grid.innerHTML = "";
+  generateGrid(gridNum);
+
+}
+
+function reset() {
+  let grid = document.getElementById("grid");
+  grid.innerHTML = "";
+  generateGrid(gridNum);
+}
+
+//function switchColors() {
+
+//}
+
+window.onload = generateGrid(gridNum);
